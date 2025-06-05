@@ -7,7 +7,7 @@
       copy:
         src: "../target/AnsibleMavenWeb.war"
         dest: "/opt/tomcat/webapps/AnsibleMavenWeb.war"
-        remote_src: no
+        remote_src: yes
 
     - name: Restart Tomcat
       systemd:
